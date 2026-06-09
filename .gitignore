@@ -1,0 +1,47 @@
+# Node
+node_modules/
+
+# Frontend
+frontend/node_modules/
+frontend/.env
+frontend/dist/
+
+# Backend
+backend/target/
+backend/src/main/resources/application.properties
+
+# Python
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Flask uploads / runtime
+ai_breed_identifier/uploads/
+uploads/
+
+# Model files (PyTorch) - too large for GitHub
+*.pth
+
+# Environment files
+.env
+*.env
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Distribution / build
+dist/
+build/
+*.egg-info/
+
+# Keep specific ML artifacts that are needed for deployment
+!static/ml/best_knn_model.pkl
+!updated_pet_dataset.csv

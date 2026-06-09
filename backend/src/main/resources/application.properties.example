@@ -1,0 +1,12 @@
+## Example Spring Boot application.properties (DO NOT COMMIT real secrets)
+## Replace placeholder values or set environment variables when deploying.
+
+# MongoDB connection (use MongoDB Atlas connection string in production)
+spring.data.mongodb.uri=${MONGODB_URI:mongodb://localhost:27017/Pet-Adoption}
+
+# File upload limits
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=50MB
+
+# Upload directory (local default)
+upload.dir=${UPLOAD_DIR:uploads}
